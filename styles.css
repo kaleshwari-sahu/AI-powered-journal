@@ -22,3 +22,14 @@ body {
     margin-bottom: 20px;
     font-size: 2rem;
   }
+
+  #entryInput {
+    width: 100%; /* Adjust width inside container */
+    max-width: 100%; /* Prevent it from overflowing the parent container */
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    box-sizing: border-box; /* Ensure it respects container's width */
+  }
