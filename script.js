@@ -20,3 +20,26 @@ function displayEntries() {
         entriesContainer.appendChild(entryDiv);
     });
 }
+
+document.getElementById("addButton").addEventListener("click", async () => {
+    const inputText = document.getElementById("entryInput").value.trim();
+
+    if (!inputText) {
+        alert("Please write something before adding!");
+        return;
+    }
+
+    const sentiment = await analyzeSentiment(inputText);
+
+    const newEntry = {
+        text: inputText,
+        sentiment: sentiment || "Neutral",
+        timestamp: new Date().toLocaleString()
+    };
+
+    journalEntries.push(newEntry);
+    localStorage.setItem("journalEntries", JSON.stringify(journalEntries));
+
+    displayEntries();
+    document.getElementById("entryInput").value = "";
+});
