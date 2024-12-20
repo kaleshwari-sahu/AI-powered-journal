@@ -89,4 +89,16 @@ body {
     justify-content: space-between;
   }
   
-  
+  .entry .actions button {
+    background-color: #4a148c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  } 
+
+  .entry .actions button:hover {
+    background-color: #7b1fa2;
+  }
