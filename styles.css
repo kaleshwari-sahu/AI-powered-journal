@@ -102,3 +102,41 @@ body {
   .entry .actions button:hover {
     background-color: #7b1fa2;
   }
+
+  @media (max-width: 280px) {
+    .container {
+        margin: 20px auto;
+        padding: 10px;
+    }
+  
+    h1 {
+        font-size: 1.5rem;
+    }
+  
+    #entryInput {
+        font-size: 14px;
+        padding: 10px;
+        width: 100%;
+    }
+
+    #addButton {
+        font-size: 14px;
+        padding: 10px;
+    }
+  
+    #journalEntries {
+        grid-template-columns: 1fr; 
+        gap: 10px;
+    }
+  
+    .entry {
+        padding: 10px;
+        font-size: 14px;
+    }
+  
+    .entry .actions button {
+        font-size: 12px;
+        padding: 6px 8px;
+    }
+  }
+  
