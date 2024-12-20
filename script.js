@@ -43,3 +43,26 @@ document.getElementById("addButton").addEventListener("click", async () => {
     displayEntries();
     document.getElementById("entryInput").value = "";
 });
+
+function editEntry(index) {
+    const updatedText = prompt("Edit your entry:", journalEntries[index].text);
+
+    if (updatedText !== null) {
+        journalEntries[index].text = updatedText;
+        analyzeSentiment(updatedText).then((sentiment) => {
+            journalEntries[index].sentiment = sentiment || "Neutral";
+            localStorage.setItem("journalEntries", JSON.stringify(journalEntries));
+            displayEntries();
+        });
+    }
+}
+
+// Function to delete an entry
+function deleteEntry(index) {
+    if (confirm("Are you sure you want to delete this entry?")) {
+        journalEntries.splice(index, 1);
+        localStorage.setItem("journalEntries", JSON.stringify(journalEntries));
+        displayEntries();
+    }
+}
+
