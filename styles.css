@@ -47,3 +47,7 @@ body {
     transition: background-color 0.3s ease;
   }
   
+  #addButton:hover {
+    background-color: #7b1fa2;
+  }
+  
