@@ -78,3 +78,15 @@ body {
     margin: 0;
     color: #333;
   }
+
+  .entry .sentiment {
+    font-weight: bold;
+    color: #4a148c;
+  }
+
+  .entry .actions {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  
