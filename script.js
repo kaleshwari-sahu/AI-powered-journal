@@ -57,7 +57,6 @@ function editEntry(index) {
     }
 }
 
-// Function to delete an entry
 function deleteEntry(index) {
     if (confirm("Are you sure you want to delete this entry?")) {
         journalEntries.splice(index, 1);
