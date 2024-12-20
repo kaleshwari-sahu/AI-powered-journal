@@ -50,4 +50,12 @@ body {
   #addButton:hover {
     background-color: #7b1fa2;
   }
+
+  #journalEntries {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
   
