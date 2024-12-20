@@ -108,3 +108,5 @@ async function analyzeSentiment(text) {
     }
 }
 
+displayEntries();
+
