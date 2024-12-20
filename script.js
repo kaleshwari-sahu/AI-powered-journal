@@ -67,7 +67,7 @@ function deleteEntry(index) {
 }
 
 async function analyzeSentiment(text) {
-    const apiKey = "s7YHHQ7FKUr3UmvrOSB389W6UDLLYpcNpj0GGeVp"; // Replace with your Cohere API key
+    const apiKey = "s7YHHQ7FKUr3UmvrOSB389W6UDLLYpcNpj0GGeVp";
     const url = "https://api.cohere.ai/classify";
 
     const response = await fetch(url, {
