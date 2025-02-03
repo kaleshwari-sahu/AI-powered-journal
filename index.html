@@ -1,18 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI-Powered Journal</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Authentication Page</title>
+  <link rel="stylesheet" href="auth.css">
 </head>
 <body>
-    <div class="container">
-        <h1>AI-Powered Journal</h1>
-        <textarea id="entryInput" rows="4" placeholder="Write your thoughts here..."></textarea>
-        <button id="addButton">Add Entry</button>
-        <div id="journalEntries"></div>
+  <div class="container">
+    <div id="loginForm">
+      <h1>Login</h1>
+      <input type="email" id="loginEmail" placeholder="Enter your email" required>
+      <input type="password" id="loginPassword" placeholder="Enter your password" required>
+      <button id="loginButton">Login</button>
+      <p>Don't have an account? <a id="showRegister">Register here</a></p>
     </div>
-    <script src="script.js"></script>
+    <div id="registerForm" style="display: none;">
+      <h1>Register</h1>
+      <input type="email" id="regEmail" placeholder="Enter your email" required>
+      <input type="password" id="regPassword" placeholder="Enter your password" required>
+      <button id="registerButton">Register</button>
+      <p>Already have an account? <a id="showLogin">Login here</a></p>
+    </div>
+  </div>
+  <script src="auth.js"></script>
 </body>
-</html>
+</html> 
